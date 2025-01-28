@@ -15,7 +15,7 @@ int main() {
     char carta[10];
     char cidade[50];
     int populacao, pturisticos;
-    float area, pib, densidadeP, percapita; 
+    float area, pib, densidadeP, percapita, superpoder; 
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -50,6 +50,7 @@ int main() {
     //Cálculos
     densidadeP = (float) populacao / area;
     percapita = pib / (float)populacao;
+    superpoder = (float) populacao + area + pib + (float)pturisticos + densidadeP + percapita;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
